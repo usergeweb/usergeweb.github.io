@@ -1,0 +1,577 @@
+
+<head>
+<title>accueil_index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+window.onload=montre;
+function montre(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+/* CSS issu des tutoriels http://css.alsacreations.com */
+body {
+	background: white;
+	padding:0;
+	margin:0;
+	font-family: verdana, arial, sans-serif;
+	font-size: 90%;
+	color: black;
+	background-image: url(nuages.jpg);
+	background-color: #000000;
+	background-repeat: repeat;
+	margin-left: 0%;
+	margin-top: 0ex;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: absolute;
+top: 318px;
+left: 15px;
+width: 168px;
+background-image: url(textureAB2007.jpg);
+}
+
+#menu dt {
+cursor: pointer;
+background: #;
+height: 50px;
+line-height: 20px;
+margin: 30px 0;
+border: 0px solid gray;
+text-align: center;
+font-weight: bold;
+}
+
+#menu dd {
+	position: absolute;
+	z-index: 100;
+	left: 146px;
+	margin-top: -5em;
+	width: 180px;
+background: #;
+	border: 0px solid gray;
+	background-image: url(textureFFF.jpg);
+}
+
+#menu ul {
+padding: 2px;
+}
+#menu li {
+text-align: center;
+font-size: 85%;
+height: 28px;
+line-height: 18px;
+}
+#menu li a, #menu dt a {
+color: #000;
+text-decoration: none;
+display: block;
+}
+
+#menu li a:hover {
+text-decoration: underline;
+}
+
+
+#mentions {
+	font-family: verdana, arial, sans-serif;
+	position: absolute;
+	bottom : 179px;
+	left : 32px;
+	color: #none;
+	background-color: #ddd;
+}
+#mentions a {text-decoration: none;
+color: #222;
+}
+#mentions a:hover{text-decoration: underline;
+}
+.Style1 {color: #330033}
+.Style2 {font-family: "Berlin Sans FB"}
+.Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
+.Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
+.Style20 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
+.Style46 {color: #330033; font-size: 50%; }
+.Style47 {font-size: 50%}
+.Style48 {font-family: "Berlin Sans FB"; font-weight: bold; }
+
+
+-->
+</style>
+
+</head>
+<body>
+
+<!-- Menu  -->
+<dl id="menu">
+  <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();"><a href="index.html">Accueil</a></dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="cours_intro_meca.html">Cours</a></li>
+      <li><a href="td_intro_meca.html">TD</a></li>
+      <li><a href="tp_intro_meca.html">TP</a></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
+  <dd class="Style6" id="smenu3" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="statique.html">Statique</a></li>
+      <li class="Style13"><a href="cinematique.html">Cin&eacute;matique</a></li>
+      <li class="Style13"><a href="dynamique.html">Dynamique</a></li>
+      <li class="Style13"><a href="#"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu4');" onMouseOut="javascript:montre();">Conception m&eacute;canique </dt>
+  <dd class="Style6"  id="smenu4" onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="cours_conception.html">Cours</a></li>
+      <li class="Style42"><a href="td_conception.html">TD</a></li>
+      <li class="Style42"><a href="tp_conception.html">TP</a></li>
+      <li class="Style42"><a href="#" class="Style42"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu5');" onMouseOut="javascript:montre();">Projets</dt>
+  <dd class="Style6" id="smenu5" onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="robot_marcheur.html">Robot marcheur </a></li>
+      <li class="Style13"><strong><a href="robot_ramasseur.html">Robot ramasseur de balles </a></strong></li>
+      <li class="Style42"></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">D&eacute;couvertes</dt>
+  <dd id="smenu6" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li><a href="paris.html">Paris et alentours </a></li>
+      <li><a href="versailles.html">Versailles </a></li>
+      <li><a href="saint_germain.html">Saint-Germain-en-Laye</a></li>
+      <li><a href="chantilly.html">Chantilly </a></li>
+      <li><a href="lot.html">Le Lot </a></li>
+      <li><a href="ardeche.html">L'Ard&egrave;che</a></li>
+      <li><a href="vexin.html">Le Vexin</a> </li>
+      <li><a href="berlin.html">Berlin</a></li>
+      <li><a href="dresde.html">Dresde</a></li>
+    </ul>
+  </dd>
+</dl>
+<table width="1024" border="0" align="left">
+  <tr>
+    <td width="2">&nbsp;</td>
+    <td width="173">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="200">&nbsp;</td>
+    <td width="189">&nbsp;</td>
+    <td width="222">&nbsp;</td>
+    <td width="163">&nbsp;</td>
+    <td width="37">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="118" class="Style1">&nbsp;</td>
+    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="930" height="111"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" class="Style46">&nbsp;</td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><a href="http://www.sciences.uvsq.fr/"><img src="logo_universite.png" alt="d" width="174" height="67" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p class="Style48">Une petite escapade &agrave; Berlin ...</p>
+    <p class="Style2">Berlin est une grande m&eacute;tropole tr&egrave;s &eacute;tendue parsem&eacute;e de grands lacs et de for&ecirc;ts, ce qui en fait une ville tr&egrave;s agr&eacute;able &agrave; vivre car on peut trouver rapidement un coin de verdure pour se reposer tranquillement et d&eacute;guster une sp&eacute;cialit&eacute; ... </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="berlin_01.jpg" width="349" height="263"></div></td>
+    <td colspan="2"><div align="center"><img src="berlin_02.jpg" width="359" height="268"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4" class="Style48">Le Pont de Glienicke ... </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><strong><img src="glenike_1.jpg" alt="h" width="356" height="209"></strong></div></td>
+    <td colspan="2"><div align="center"><img src="glenike_2.jpg" width="360" height="214"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><span class="Style48">Le chateau de Babelsberg .... </span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="babelsberg_01.jpg" width="358" height="220"></div></td>
+    <td colspan="2"><div align="center"><img src="babelsberg_02.jpg" width="357" height="223"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><span class="Style48">Potzdam : le &quot;versailles&quot; de Berlin ... </span></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_31.jpg" width="359" height="248"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_29.jpg" width="352" height="235"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_27.jpg" width="354" height="236"></div></td>
+    <td colspan="2"><div align="center"><img src="potdzdam_2.jpg" width="353" height="242"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_9.jpg" width="363" height="242"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_14.jpg" alt="g" width="286" height="340"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_16.jpg" alt="r" width="364" height="273"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_003.jpg" alt="t" width="392" height="264"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_17.jpg" width="385" height="270"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_0000.jpg" alt="g" width="307" height="395"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_37.jpg" alt="h" width="355" height="250"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_13.jpg" width="357" height="230">&nbsp;</div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_21.jpg" width="372" height="254"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_5.jpg" width="347" height="263"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_6.jpg" width="366" height="191"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_34.jpg" width="355" height="200"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="potzdam_001.jpg" alt="f" width="341" height="420"></div></td>
+    <td colspan="2"><div align="center"><img src="potzdam_002.jpg" width="384" height="386"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="476" class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

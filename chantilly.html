@@ -1,0 +1,591 @@
+
+<head>
+<title>accueil_index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+window.onload=montre;
+function montre(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+/* CSS issu des tutoriels http://css.alsacreations.com */
+body {
+	background: white;
+	padding:0;
+	margin:0;
+	font-family: verdana, arial, sans-serif;
+	font-size: 90%;
+	color: black;
+	background-image: url(nuages.jpg);
+	background-color: #000000;
+	background-repeat: repeat;
+	margin-left: 0%;
+	margin-top: 0ex;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: absolute;
+top: 321px;
+left: 14px;
+width: 168px;
+background-image: url(textureAB2007.jpg);
+}
+
+#menu dt {
+cursor: pointer;
+background: #;
+height: 50px;
+line-height: 20px;
+margin: 30px 0;
+border: 0px solid gray;
+text-align: center;
+font-weight: bold;
+}
+
+#menu dd {
+	position: absolute;
+	z-index: 100;
+	left: 146px;
+	margin-top: -5em;
+	width: 180px;
+background: #;
+	border: 0px solid gray;
+	background-image: url(textureFFF.jpg);
+}
+
+#menu ul {
+padding: 2px;
+}
+#menu li {
+text-align: center;
+font-size: 85%;
+height: 28px;
+line-height: 18px;
+}
+#menu li a, #menu dt a {
+color: #000;
+text-decoration: none;
+display: block;
+}
+
+#menu li a:hover {
+text-decoration: underline;
+}
+
+
+#mentions {
+	font-family: verdana, arial, sans-serif;
+	position: absolute;
+	bottom : 179px;
+	left : 32px;
+	color: #none;
+	background-color: #ddd;
+}
+#mentions a {text-decoration: none;
+color: #222;
+}
+#mentions a:hover{text-decoration: underline;
+}
+.Style1 {color: #330033}
+.Style2 {font-family: "Berlin Sans FB"}
+.Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
+.Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
+.Style20 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
+.Style46 {color: #330033; font-size: 50%; }
+.Style47 {font-size: 50%}
+
+
+-->
+</style>
+
+</head>
+<body>
+
+<!-- Menu  -->
+<dl id="menu">
+  <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();"><a href="index.html">Accueil</a></dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="cours_intro_meca.html">Cours</a></li>
+      <li><a href="td_intro_meca.html">TD</a></li>
+      <li><a href="tp_intro_meca.html">TP</a></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
+  <dd class="Style6" id="smenu3" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="statique.html">Statique</a></li>
+      <li class="Style13"><a href="cinematique.html">Cin&eacute;matique</a></li>
+      <li class="Style13"><a href="dynamique.html">Dynamique</a></li>
+      <li class="Style13"><a href="#"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu4');" onMouseOut="javascript:montre();">Conception m&eacute;canique </dt>
+  <dd class="Style6"  id="smenu4" onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="cours_conception.html">Cours</a></li>
+      <li class="Style42"><a href="td_conception.html">TD</a></li>
+      <li class="Style42"><a href="tp_conception.html">TP</a></li>
+      <li class="Style42"><a href="#" class="Style42"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu5');" onMouseOut="javascript:montre();">Projets</dt>
+  <dd class="Style6" id="smenu5" onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="robot_marcheur.html">Robot marcheur </a></li>
+      <li class="Style13"><strong><a href="robot_ramasseur.html">Robot ramasseur de balles </a></strong></li>
+      <li class="Style42"></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">D&eacute;couvertes</dt>
+  <dd id="smenu6" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li><a href="paris.html">Paris et alentours </a></li>
+      <li><a href="versailles.html">Versailles </a></li>
+      <li><a href="saint_germain.html">Saint-Germain-en-Laye</a></li>
+      <li><a href="chantilly.html">Chantilly </a></li>
+      <li><a href="lot.html">Le Lot </a></li>
+      <li><a href="ardeche.html">L'Ard&egrave;che</a></li>
+      <li><a href="vexin.html">Le Vexin</a> </li>
+      <li><a href="berlin.html">Berlin</a></li>
+      <li><a href="dresde.html">Dresde</a></li>
+    </ul>
+  </dd>
+</dl>
+<table width="959" border="0" align="left">
+  <tr>
+    <td width="2">&nbsp;</td>
+    <td width="178">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="201">&nbsp;</td>
+    <td width="185">&nbsp;</td>
+    <td width="185">&nbsp;</td>
+    <td width="187">&nbsp;</td>
+    <td width="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="118" class="Style1">&nbsp;</td>
+    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="960" height="111"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" class="Style46">&nbsp;</td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><a href="http://www.sciences.uvsq.fr/"><img src="logo_universite.png" alt="d" width="174" height="67" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p class="Style2"><strong>Le chateau de Chantilly ....     </strong>
+      <p class="Style2">Le ch&acirc;teau de Chantilly se dresse au c&oelig;ur d&rsquo;un vaste domaine de 7 800   hectares de terres, dans une des plus grandes for&ecirc;ts des environs de   Paris.
+    <p class="Style2">A l'origine c'&eacute;tait un ch&acirc;teau m&eacute;di&eacute;val, r&eacute;nov&eacute; par la suite dans un style inspir&eacute; de la Renaissance et augment&eacute; d&rsquo;un petit ch&acirc;teau de plaisance</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="chantilly_3.jpg" alt="g" width="387" height="254"></div></td>
+    <td colspan="2"><div align="center"><img src="chantilly_6.jpg" alt="er" width="361" height="265"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="chantilly_5.jpg" alt="u" width="390" height="263"></div></td>
+    <td colspan="2"><div align="center"><img src="chantilly_4.jpg" alt="&eacute;&eacute;" width="365" height="260"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="chantilly_1.jpg" alt="zz" width="380" height="290"></div></td>
+    <td colspan="2"><div align="center"><img src="chantilly_2.jpg" alt="rr" width="381" height="288"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
