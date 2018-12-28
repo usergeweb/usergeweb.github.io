@@ -1,0 +1,518 @@
+
+<head>
+<title>accueil_index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+window.onload=montre;
+function montre(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+/* CSS issu des tutoriels http://css.alsacreations.com */
+body {
+	background: white;
+	padding:0;
+	margin:0;
+	font-family: verdana, arial, sans-serif;
+	font-size: 90%;
+	color: black;
+	background-image: url(nuages.jpg);
+	background-color: #000000;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	margin-top: 0ex;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+	position: relative;
+	top: 900px;
+	left: 340px;
+	width: 168px;
+	background-image: url(textureAB2007.jpg);
+	overflow: visible;
+	background-color: #EBEBEB;
+}
+
+#menu dt {
+	cursor: pointer;
+background: #;
+	height: 50px;
+	line-height: 20px;
+	margin: 30px 0;
+	border: 0px solid gray;
+	text-align: center;
+	font-weight: bold;
+	left: auto;
+	top: auto;
+	right: auto;
+	bottom: auto;
+}
+
+#menu dd {
+	position: absolute;
+	z-index: 100;
+	left: 146px;
+	margin-top: -5em;
+	width: 180px;
+background: #;
+	border: 0px solid gray;
+	background-image: url(textureFFF.jpg);
+	background-color: #000000;
+}
+
+#menu ul {
+padding: 2px;
+}
+#menu li {
+text-align: center;
+font-size: 85%;
+height: 28px;
+line-height: 18px;
+}
+#menu li a, #menu dt a {
+color: #000;
+text-decoration: none;
+display: block;
+}
+
+#menu li a:hover {
+text-decoration: underline;
+}
+
+
+#mentions {
+	font-family: verdana, arial, sans-serif;
+	position: absolute;
+	bottom : 179px;
+	left : 32px;
+	color: #none;
+	background-color: #ddd;
+}
+#mentions a {text-decoration: none;
+color: #222;
+}
+#mentions a:hover{text-decoration: underline;
+}
+.Style1 {color: #330033}
+.Style2 {font-family: "Berlin Sans FB"}
+.Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
+.Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
+.Style20 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
+.Style44 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif; font-style: italic; }
+.Style45 {color: #000033}
+.Style46 {color: #330033; font-size: 50%; }
+.Style47 {font-size: 50%}
+.Style51 {
+	font-size: 14px;
+	font-family: "Berlin Sans FB";
+}
+.Style53 {color: #330033; font-family: "Berlin Sans FB"; font-size: 14px; }
+.Style55 {color: #330033; font-family: "Berlin Sans FB"; font-weight: bold; font-size: 12px; }
+.Style58 {font-size: 14px; font-family: "Berlin Sans FB"; font-weight: bold; }
+.Style59 {color: #330033; font-family: "Berlin Sans FB"; font-size: 14px; font-weight: bold; }
+
+
+-->
+</style>
+
+</head>
+<body>
+
+
+<!-- Menu  -->
+<dl id="menu" name="menu" >
+  <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();">Accueil</dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="cours_intro_meca.html">Cours</a></li>
+      <li><a href="td_intro_meca.html">TD</a></li>
+      <li><a href="tp_intro_meca.html">TP</a></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
+  <dd class="Style6" id="smenu3" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="statique.html">Statique</a></li>
+      <li class="Style13"><a href="cinematique.html">Cin&eacute;matique</a></li>
+      <li class="Style13">Dynamique</li>
+      <li class="Style13"><a href="#"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">Conception m&eacute;canique </dt>
+  <dd class="Style6"  id="smenu4" onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="cours_conception.html">Cours</a></li>
+      <li class="Style42"><a href="td_conception.html">TD</a></li>
+      <li class="Style42"><a href="tp_conception.html">TP</a></li>
+      <li class="Style42"><a href="#" class="Style42"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">Projets</dt>
+  <dd class="Style6" id="smenu5" onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="robot_marcheur.html">Robot marcheur </a></li>
+      <li class="Style13"><strong><a href="robot_ramasseur.html">Robot ramasseur de balles </a></strong></li>
+      <li class="Style42"></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">D&eacute;couvertes</dt>
+  <dd id="smenu6" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li><a href="versailles.html">Versailles </a></li>
+      <li><a href="saint_germain.html">Saint-Germain-en-laye</a> </li>
+      <li><a href="lot.html">Le Lot </a></li>
+      <li><a href="vexin.html">Le Vexin</a> </li>
+      <li><a href="berlin.html">Berlin</a></li>
+      <li><a href="dresde.html">Dresde</a></li>
+    </ul>
+  </dd>
+</dl>
+<table width="959" border="0" align="center">
+  <tr>
+    <td width="2">&nbsp;</td>
+    <td width="180">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="51">&nbsp;</td>
+    <td width="240">&nbsp;</td>
+    <td width="213">&nbsp;</td>
+    <td width="275">&nbsp;</td>
+    <td width="10">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="118" class="Style1">&nbsp;</td>
+    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="943" height="111"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="3" class="Style1">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+    <td height="3">&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="53" class="Style1">&nbsp;</td>
+    <td colspan="6" background="textureFFF.jpg" bgcolor="#F0F0F0"><div align="center" class="Style44">
+      <p class="Style45">Site personnel de Serge Soursou, professeur de m&eacute;canique &agrave; l'universit&eacute; de Versailles Saint-Quentin-en-Yvelines </p>
+      </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" class="Style46">&nbsp;</td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><img src="logo_universite.jpg" width="173" height="106"></td>
+    <td>&nbsp;</td>
+    <td colspan="4"><img src="bandeau2013_1.jpg" width="754" height="112"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2" rowspan="7" bgcolor="#00FF99"><ul>
+      <li class="Style51">Petit historiq<span class="Style1">ue des sciences de l'ing&eacute;nieur...</span></li>
+      <li class="Style53">La m&eacute;canique s'est longtemps impos&eacute;e comme  &quot;LA&quot; science des ing&eacute;nieurs . Depuis le d&eacute;but du xx&egrave;me si&egrave;cle ,  l'&eacute;lectricit&eacute; s'est impos&eacute;e dans l'architecture des syst&egrave;mes techniques. Il en  est de m&ecirc;me pour l'&eacute;lectronique puis l'informatique qui font de plus en plus  partie de notre quotidien. Malgr&eacute; cette &eacute;volution , la m&eacute;canique reste une  composante essentielle des sciences de l'ing&eacute;nieur ( r&eacute;alisation mat&eacute;rielle des  produits... ) </li>
+      <li class="Style53">De nos jours, les syst&egrave;mes enti&egrave;rement  m&eacute;caniques ( syst&egrave;mes simples ) sont de plus plus rares ( stylo &agrave; bille, paire  de ciseaux, agrafeuse de bureau....).</li>
+    </ul>
+      <span class="Style53">Les sciences de l'ing&eacute;nieur s'int&eacute;ressent &agrave; l'&eacute;tude des </span><span class="Style55"><strong>&quot;syst&egrave;mes </strong>pluritehniques&quot;.</span></td>
+    <td rowspan="7"><p align="center"><img src="engrenages.jpg" width="158" height="103"></p>
+    <p align="center"><img src="horlogerie.jpg" width="165" height="114"></p></td>
+    <td rowspan="7" bgcolor="#33FFFF"><p class="Style51">On appelle <strong>machine  simple</strong> un dispositif m&eacute;canique &eacute;l&eacute;mentaire permettant de transformer  une force de module et direction d&eacute;termin&eacute;s en une force dont le module et/ou  la direction sont diff&eacute;rents.<br>
+        On distingue  g&eacute;n&eacute;ralement 7 types de machines simples&nbsp;: <br>
+      -  le levier,<br>
+- la roue,<br>
+- la poulie,<br>
+- le coin ,<br>
+- le plan inclin&eacute;,<br>
+- la vis ,<br>
+- l'engrenage. </p>      </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2" rowspan="4"><p align="center" class="Style2"><img src="robot_nao.jpg" width="178" height="243"></p>
+      <p align="center" class="Style58">Robot Nao </p>
+    <p align="center"><span class="Style58">( Aldebaran Robotics )</span> </p></td>
+    <td colspan="2" rowspan="4" bgcolor="#FFCC33"><p class="Style51">Les syst&egrave;mes  pluritechniques<br>
+        Un <strong>syst&egrave;me  pluritechnique</strong> est compos&eacute; d'&eacute;l&eacute;ments qui font appel &agrave; plusieurs  technologies ( m&eacute;canique, &eacute;lectricit&eacute;, &eacute;lectronique, automatique, informatique  ).<br>
+        Ces syst&egrave;mes  r&eacute;alisent :<br>
+        - des fonctions  &quot;type dispositif m&eacute;canique &eacute;l&eacute;mentaire&quot; <br>
+        - des fonctions de  gestion et de transmission de l'information par l'interm&eacute;diaire de capteurs,  claviers de saisie, calculateurs....</p>
+      <p class="Style51">Pour aborder l'&eacute;tude  compl&egrave;te de ces syst&egrave;mes , il faut donc faire appel simultan&eacute;ment &agrave; la  m&eacute;canique, l'&eacute;lectricit&eacute;, l'&eacute;lectronique, l'automatique, l'informatique... </p>
+      <p class="Style51">Aujourd'hui la m&eacute;canique est pr&eacute;sente dans tous les syst&egrave;mes modernes ( robots, disque dur d'ordinateur, ...) et les exigeances de r&eacute;alisation ( miniaturisation, performances, poids, delais de d&eacute;veloppement...) peuvent &ecirc;tre atteintes gr&acirc;ce &agrave; l'utilisation d'outils de conception et de fabrication modernes ( CAO, FAO, simulation num&eacute;rique, prototypage rapide...) qui font appel &agrave; des logiciels toujours plus performants ... </p>    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="258" class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><img src="disque_dur.jpg" width="156" height="167"></td>
+    <td>&nbsp;</td>
+    <td colspan="3" bgcolor="#FFFF99"><p class="Style53">Le secteur a&eacute;ronautique et spatial offre une grande diversit&eacute; de domaines d'intervention dans le domaine de la m&eacute;canique.L'ing&eacute;nieur m&eacute;canicien con&ccedil;oit des pi&egrave;ces et des ensembles : cellules   d'avion, voilures (les ailes), tuy&egrave;res (pour les r&eacute;acteurs), trains   d'atterrissage... L&eacute;g&egrave;ret&eacute; des mat&eacute;riaux, tenue des pi&egrave;ces et s&eacute;curit&eacute;   sont ses ma&icirc;tres mots. C'est dans les bureaux d'&eacute;tudes qu'il exerce le   plus souvent ses talents.</p>
+    <p class="Style53">La m&eacute;canique inervient aussi l&agrave; on ne l'attend pas : par exemple dans les periph&eacute;riques informatiques ( disques durs ...)  </p></td>
+    <td><img src="airbus_bourget_reduit.jpg" alt="hhy" width="275" height="177"></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td class="Style59"><div align="center">Disque dur </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td><div align="center"><span class="Style59">Airbus A380</span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td colspan="2" rowspan="3"><img src="aerodynamique.jpg" width="182" height="151"></td>
+    <td colspan="2" bgcolor="#FFCCFF" class="Style51"><p>La m&eacute;canique est aussi pr&eacute;sente dans les sciences du vivant par la <strong>biom&eacute;canique</strong> qui est l'exploration des propri&eacute;t&eacute;s m&eacute;caniques des organismes vivants.</p>
+    <p>Le d&eacute;veloppement du coeur artificiel en est la plus parfaite illustration puisqu'il est r&eacute;alis&eacute; gr&acirc;ce &agrave; la collaboration d'ing&eacute;nieurs d'EADS et de m&eacute;decins. </p></td>
+    <td><img src="coeur_artificiel.jpg" width="205" height="157"></td>
+    <td rowspan="2"><div align="center"><img src="lsme303_avion.jpg" width="268" height="158"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="Style58"><div align="center"><span class="Style51">Coeur artificiel ( Carmat ) </span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="Style58"><div align="center" class="Style51"></div></td>
+    <td class="Style51"><div align="center" class="Style59"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td colspan="6" rowspan="2" bgcolor="#FF9966"><p><span class="Style53">Aujourd'hui, la m&eacute;canique intervient :<br>
+      - dans la <strong>conversion ou la transformation d'&eacute;nergie </strong>qui concerne les domaines de la production d'&eacute;nergie ( modes de production et  de distribution, &eacute;nergies nouvelles ...) ou l'autonomie en &eacute;nergie ( habitat &agrave;  &eacute;nergie positive, d&eacute;placements non polluants ...) qui doivent &eacute;voluer : c'est  l'objet de la transition &eacute;nerg&eacute;tique</span></p>
+      <p><span class="Style53">Voir <a href="CONVERTIR_fonctionnel_v2_2013.pdf">document ressources &quot;convertir l'&eacute;nergie&quot;</a></span></p>
+      <p><span class="Style53"><br>
+    - dans <strong>l'ing&eacute;nierie des syst&egrave;mes complexes </strong>qui sont  caract&eacute;ris&eacute;s par la pr&eacute;sence de plus en plus importante de capteurs ( syst&egrave;mes  pluritechniques , robotique ...) : &nbsp;c'est l'objet de la &ldquo;conception  et la mod&eacute;lisation des syst&egrave;mes m&eacute;caniques &ldquo; &nbsp;qui concerne la mod&eacute;lisation des structures, la  conception , l'&eacute;tude de la transmission de puissance et le prototypage de  syst&egrave;mes complexes, int&eacute;grant divers composants (actionneurs, capteurs,  &eacute;l&eacute;ments de machine, syst&egrave;mes biom&eacute;caniques ...) et leurs syst&egrave;mes de commande.</span></p>      <p class="Style53">Voir <a href="TRANSMETTRE_fonct_mat_2013.pdf">document ressources &quot;transmettre l'&eacute;nergie&quot; </a></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="239" class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td colspan="2"><div align="center"></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">
+		<div align="center">
+		  <script language="JavaScript" src="http://www.compteur-gratuit.org/count/c.js?id=9487837&t=2&d=26&n=5&s=10432"></script>
+		  <noscript>
+	      un <a target="_blank" href="http://www.compteur-gratuit.org">compteur gratuit</a> pour votre site web
+	      </noscript>
+        </div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
