@@ -1,0 +1,615 @@
+
+<head>
+<title>accueil_index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+window.onload=montre;
+function montre(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+/* CSS issu des tutoriels http://css.alsacreations.com */
+body {
+	background: white;
+	padding:0;
+	margin:0;
+	font-family: verdana, arial, sans-serif;
+	font-size: 90%;
+	color: black;
+	background-image: url(nuages.jpg);
+	background-color: #000000;
+	background-repeat: repeat;
+	margin-left: 0%;
+	margin-top: 0ex;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: absolute;
+top: 321px;
+left: 12px;
+width: 168px;
+background-image: url(textureAB2007.jpg);
+}
+
+#menu dt {
+cursor: pointer;
+background: #;
+height: 50px;
+line-height: 20px;
+margin: 30px 0;
+border: 0px solid gray;
+text-align: center;
+font-weight: bold;
+}
+
+#menu dd {
+	position: absolute;
+	z-index: 100;
+	left: 146px;
+	margin-top: -5em;
+	width: 180px;
+background: #;
+	border: 0px solid gray;
+	background-image: url(textureFFF.jpg);
+}
+
+#menu ul {
+padding: 2px;
+}
+#menu li {
+text-align: center;
+font-size: 85%;
+height: 28px;
+line-height: 18px;
+}
+#menu li a, #menu dt a {
+color: #000;
+text-decoration: none;
+display: block;
+}
+
+#menu li a:hover {
+text-decoration: underline;
+}
+
+
+#mentions {
+	font-family: verdana, arial, sans-serif;
+	position: absolute;
+	bottom : 179px;
+	left : 32px;
+	color: #none;
+	background-color: #ddd;
+}
+#mentions a {text-decoration: none;
+color: #222;
+}
+#mentions a:hover{text-decoration: underline;
+}
+.Style1 {color: #330033}
+.Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
+.Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
+.Style20 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
+.Style46 {color: #330033; font-size: 50%; }
+.Style47 {font-size: 50%}
+.Style62 {font-family: "Berlin Sans FB"}
+.Style64 {font-family: "Berlin Sans FB"; font-size: 16px; color: #330033;}
+.Style65 {color: #330033; font-size: 16px;}
+.Style49 {font-family: "Berlin Sans FB"; font-size: 24px; font-weight: bold; }
+.Style66 {font-family: "Berlin Sans FB"; font-weight: bold; }
+.Style18 {font-size: 200%;
+font-family: "Berlin Sans FB";
+font-weight: bold;
+color: #330099;
+}
+
+
+-->
+</style>
+</head>
+<body onLoad="MM_CheckFlashVersion('7,0,0,0','Le contenu de cette page n&eacute;cessite une version plus r&eacute;cente de Macromedia Flash Player. Voulez-vous le t&eacute;l&eacute;charger maintenant ?');">
+
+<!-- Menu  -->
+<dl id="menu">
+  <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();"><a href="index.html">Accueil</a></dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="cours_intro_meca.html">Cours</a></li>
+      <li><a href="td_intro_meca.html">TD</a></li>
+      <li><a href="tp_intro_meca.html">TP</a></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
+  <dd class="Style6" id="smenu3" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="statique.html">Statique</a></li>
+      <li class="Style13"><a href="cinematique.html">Cin&eacute;matique</a></li>
+      <li class="Style13"><a href="dynamique.html">Dynamique</a></li>
+      <li class="Style13"><a href="#"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu4');" onMouseOut="javascript:montre();">Conception m&eacute;canique </dt>
+  <dd class="Style6"  id="smenu4" onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="cours_conception.html">Cours</a></li>
+      <li class="Style42"><a href="td_conception.html">TD</a></li>
+      <li class="Style42"><a href="tp_conception.html">TP</a></li>
+      <li class="Style42"><a href="#" class="Style42"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu5');" onMouseOut="javascript:montre();">Projets</dt>
+  <dd class="Style6" id="smenu5" onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="robot_marcheur.html">Robot marcheur </a></li>
+      <li class="Style13"><strong><a href="robot_ramasseur.html">Robot ramasseur de balles </a></strong></li>
+      <li class="Style42"></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">D&eacute;couvertes</dt>
+  <dd id="smenu6" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li><a href="paris.html">Paris et alentours </a></li>
+      <li><a href="versailles.html">Versailles </a></li>
+      <li><a href="saint_germain.html">Saint-Germain-en-Laye</a></li>
+      <li><a href="chantilly.html">Chantilly </a></li>
+      <li><a href="lot.html">Le Lot </a></li>
+      <li><a href="ardeche.html">L'Ard&egrave;che</a></li>
+      <li><a href="vexin.html">Le Vexin</a> </li>
+      <li><a href="berlin.html">Berlin</a></li>
+      <li><a href="dresde.html">Dresde</a></li>
+    </ul>
+  </dd>
+</dl>
+<table width="1087" border="0" align="left">
+  <tr>
+    <td width="2">&nbsp;</td>
+    <td width="175">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="239">&nbsp;</td>
+    <td width="224">&nbsp;</td>
+    <td width="278">&nbsp;</td>
+    <td width="105">&nbsp;</td>
+    <td width="26">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="118" class="Style1">&nbsp;</td>
+    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="991" height="111"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" class="Style46">&nbsp;</td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><a href="http://www.sciences.uvsq.fr/"><img src="logo_universite.png" alt="d" width="174" height="67" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p class="Style64" style="text-align:justify"><u><font color="#000080">Probl&egrave;me:</font></u></p>
+      <p class="Style64" style="text-align:justify"> <font color="#000080">A partir d'un motor&eacute;ducteur 
+        tel que ci-apr&egrave;s, l'objectif est de r&eacute;aliser un robot marcheur ( roues 
+        interdites )</font></p>
+      <p class="Style64" style="text-align:center"><font color="#000080"><img src="motoreducteurisi.jpg" alt="de" width="244" height="181" border="0" /></font></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">IL faut  d'abord 
+        rechercher des syst&egrave;mes permettant d'obtenir le mouvement alternatif 
+        des jambes &agrave; partir d'un mouvement de rotation continu.</font></span></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Pour cela, des prototypes du 
+        syst&egrave;me de transformation de mouvement ont &eacute;t&eacute; r&eacute;alis&eacute;s en carton afin de 
+        v&eacute;rifier la cin&eacute;matique du syst&egrave;me.</font></span></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Ensuite, une fois que la 
+        cin&eacute;matique du syst&egrave;me choisi a &eacute;t&eacute; valid&eacute;e,&nbsp; les pi&egrave;ces sont r&eacute;alis&eacute;es en 
+        PVC par d&eacute;coupage et pliage.</font></span></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Enfin l'assemblage final du 
+        robot se fait par vis.</font></span></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Une fois le robot assembl&eacute; il 
+        arrive parfois que le robot ne fonctionne pas comme cela &eacute;tait pr&eacute;vu ( probl&egrave;mes 
+        d'&eacute;quilibre, de frottements des pi&egrave;ces tournantes, de masse trop importante des 
+        pi&egrave;ces en mouvement ...) </font></span></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Il faut alors analyser la 
+        cause du probl&egrave;me et rechercher une solution appropri&eacute;e, ce qui n'est pas 
+        toujours une t&acirc;che ais&eacute;e.</font></span></p>
+      <p class="MsoNormal  Style46 Style1" style="text-align:justify"> <span class="Style64"><font color="#000080">Cela dit ,ce travail est une source d'une r&eacute;elle cr&eacute;ativit&eacute;, comme peuvent le montrer les 
+    images ci-apr&egrave;s de quelques r&eacute;alisations.</font></span></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center" class="Style66">Etude cin&eacute;matique d'un robot bip&egrave;de </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><img src="etude_cinem_robot_bipede.jpg" alt="ettr" width="860" height="597"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td class="Style18"><div align="center"><span class="Style62"></span></div></td>
+    <td colspan="4" class="Style18"><div align="center"><span class="Style62">Exemples de r&eacute;alisations </span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p align="center" class="Style66">Robot &quot;walkomega&quot;</p>
+      <p align="center" class="Style66">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240" id="FLVPlayer">
+          <param name="movie" value="FLVPlayer_Progressive.swf" />
+          <param name="salign" value="lt" />
+          <param name="quality" value="high" />
+          <param name="scale" value="noscale" />
+          <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot1&autoPlay=false&autoRewind=false" />
+          <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot1&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="320" height="240" name="FLVPlayer" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />        
+</object>
+      </p>    </td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center" class="Style66">Mod&egrave;le num&eacute;rique </p>
+    <p><img src="robot_lavergne_SW.jpg" alt="er" width="355" height="401" /></p></td>
+    <td colspan="2"><p align="center" class="Style66">Mod&egrave;le r&eacute;el </p>
+    <p class="Style18"><img src="robot17.JPG" alt="qz" width="385" height="416" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><span class="Style66">Robot &quot;litle girafe &quot;</span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_girafe_SW.jpg" alt="ze" width="332" height="449" /></p></td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le r&eacute;el </span></p>
+    <p align="center"><img src="robot_girafe.jpg" alt="ze" width="384" height="438" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p align="center" class="Style66">Robot &quot;blooxic&quot;</p>
+      <p align="center" class="Style49">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240" id="FLVPlayer1">
+          <param name="movie" value="FLVPlayer_Progressive.swf" />
+          <param name="salign" value="lt" />
+          <param name="quality" value="high" />
+          <param name="scale" value="noscale" />
+          <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot2&autoPlay=false&autoRewind=false" />
+          <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot2&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="320" height="240" name="FLVPlayer1" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />        
+</object>
+      </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_jonathan_sw.jpg" alt="&eacute;ze" width="398" height="288" /></p></td>
+    <td colspan="2"><p align="center" class="Style66">Mod&egrave;le r&eacute;el </p>
+    <p align="center" class="Style18"><img src="robot11.JPG" alt="qsd" width="404" height="301" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><span class="Style66">Robot &quot;elscorpion&quot;</span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_scorpio_SW.jpg" alt="er" width="397" height="358" /></p></td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le r&eacute;el </span></p>
+    <p align="center"><img src="robot_scorpio.jpg" alt="ze" width="385" height="366" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p align="center" class="Style66">Robot &quot;skyproject&quot;</p>
+      <p align="center" class="Style49">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240" id="FLVPlayer2">
+          <param name="movie" value="FLVPlayer_Progressive.swf" />
+          <param name="salign" value="lt" />
+          <param name="quality" value="high" />
+          <param name="scale" value="noscale" />
+          <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot4&autoPlay=false&autoRewind=false" />
+          <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot4&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="320" height="240" name="FLVPlayer2" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />        
+</object>
+      </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_nicolas_m_sw.jpg" alt="er" width="358" height="314" /></p></td>
+    <td colspan="2"><p align="center" class="Style66">Mod&egrave;le r&eacute;el</p>
+    <p align="center" class="Style18"><img src="robot16.JPG" alt="qsdfg" width="397" height="302" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><span class="Style66">Robot &quot;turtlebidule&quot;</span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_turtle_sw.jpg" alt="rt" width="371" height="316" /></p></td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le r&eacute;el </span></p>
+    <p align="center"><img src="robot_turtle.jpg" alt="er" width="384" height="305" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><p align="center" class="Style66">Robot &quot;larmenien&quot;</p>
+      <p align="center" class="Style49">
+        <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240" id="FLVPlayer3">
+          <param name="movie" value="FLVPlayer_Progressive.swf" />
+          <param name="salign" value="lt" />
+          <param name="quality" value="high" />
+          <param name="scale" value="noscale" />
+          <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot3&autoPlay=false&autoRewind=false" />
+          <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=robot3&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="320" height="240" name="FLVPlayer3" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />        
+</object>
+      </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><p align="center"><span class="Style66">Mod&egrave;le num&eacute;rique </span></p>
+    <p align="center"><img src="robot_sargis_sw.jpg" alt="er" width="358" height="376" /></p></td>
+    <td colspan="2"><p align="center" class="Style66">Mod&egrave;le r&eacute;el </p>
+    <p align="center" class="Style18"><img src="robot13.JPG" alt="qs" width="375" height="339" /></p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="robot19.JPG" alt="sdf" width="401" height="311" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="robot18.JPG" alt="qzer" width="371" height="304" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="robot15.JPG" alt="zer" width="426" height="308" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="robot14.JPG" alt="qsd" width="376" height="330" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0744.JPG" alt="rt" width="355" height="334" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0745.JPG" alt="s" width="291" height="452" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0746.JPG" alt="u" width="323" height="447" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0747.JPG" alt="sqs" width="314" height="434" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0748.JPG" alt="qq" width="284" height="409" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0749.JPG" alt="qqss" width="372" height="313" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0517.JPG" alt="az" width="361" height="282" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0518.JPG" alt="sd" width="355" height="285" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0510.JPG" alt="er" width="367" height="480" border="0" /></span></div></td>
+    <td colspan="2"><div align="center"><span class="Style62"><img src="IMAG0513.JPG" alt="qsd" width="325" height="481" /></span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

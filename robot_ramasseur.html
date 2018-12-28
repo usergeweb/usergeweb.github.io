@@ -1,0 +1,620 @@
+
+<head>
+<title>accueil_index</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<script type="text/javascript">
+<!--
+window.onload=montre;
+function montre(id) {
+var d = document.getElementById(id);
+	for (var i = 1; i<=10; i++) {
+		if (document.getElementById('smenu'+i)) {document.getElementById('smenu'+i).style.display='none';}
+	}
+if (d) {d.style.display='block';}
+}
+
+function MM_CheckFlashVersion(reqVerStr,msg){
+  with(navigator){
+    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
+    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
+    if (!isIE || !isWin){  
+      var flashVer = -1;
+      if (plugins && plugins.length > 0){
+        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
+        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
+        if (desc == "") flashVer = -1;
+        else{
+          var descArr = desc.split(" ");
+          var tempArrMajor = descArr[2].split(".");
+          var verMajor = tempArrMajor[0];
+          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
+          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
+          flashVer =  parseFloat(verMajor + "." + verMinor);
+        }
+      }
+      // WebTV has Flash Player 4 or lower -- too low for video
+      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
+
+      var verArr = reqVerStr.split(",");
+      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
+  
+      if (flashVer < reqVer){
+        if (confirm(msg))
+          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
+      }
+    }
+  } 
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+/* CSS issu des tutoriels http://css.alsacreations.com */
+body {
+	background: white;
+	padding:0;
+	margin:0;
+	font-family: verdana, arial, sans-serif;
+	font-size: 90%;
+	color: black;
+	background-image: url(nuages.jpg);
+	background-color: #000000;
+	background-repeat: repeat;
+	margin-left: 0%;
+	margin-top: 0ex;
+	margin-right: 0%;
+	margin-bottom: 0%;
+}
+dl, dt, dd, ul, li {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+#menu {
+position: absolute;
+top: 324px;
+left: 20px;
+width: 168px;
+background-image: url(textureAB2007.jpg);
+}
+
+#menu dt {
+cursor: pointer;
+background: #;
+height: 50px;
+line-height: 20px;
+margin: 30px 0;
+border: 0px solid gray;
+text-align: center;
+font-weight: bold;
+}
+
+#menu dd {
+	position: absolute;
+	z-index: 100;
+	left: 146px;
+	margin-top: -5em;
+	width: 180px;
+background: #;
+	border: 0px solid gray;
+	background-image: url(textureFFF.jpg);
+}
+
+#menu ul {
+padding: 2px;
+}
+#menu li {
+text-align: center;
+font-size: 85%;
+height: 28px;
+line-height: 18px;
+}
+#menu li a, #menu dt a {
+color: #000;
+text-decoration: none;
+display: block;
+}
+
+#menu li a:hover {
+text-decoration: underline;
+}
+
+
+#mentions {
+	font-family: verdana, arial, sans-serif;
+	position: absolute;
+	bottom : 179px;
+	left : 32px;
+	color: #none;
+	background-color: #ddd;
+}
+#mentions a {text-decoration: none;
+color: #222;
+}
+#mentions a:hover{text-decoration: underline;
+}
+.Style1 {color: #330033}
+.Style2 {font-family: "Berlin Sans FB"}
+.Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
+.Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
+.Style20 {
+	color: #330033;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+}
+.Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
+.Style46 {color: #330033; font-size: 50%; }
+.Style47 {font-size: 50%}
+.Style48 {font-family: "Berlin Sans FB"; font-weight: bold; }
+.Style49 {font-family: "Berlin Sans FB"; font-weight: bold; color: #990033; }
+.Style50 {color: #990033}
+
+
+-->
+</style>
+
+</head>
+<body onLoad="MM_CheckFlashVersion('7,0,0,0','Le contenu de cette page n&eacute;cessite une version plus r&eacute;cente de Macromedia Flash Player. Voulez-vous le t&eacute;l&eacute;charger maintenant ?');">
+
+<!-- Menu  -->
+<dl id="menu">
+  <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();"><a href="index.html">Accueil</a></dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="cours_intro_meca.html">Cours</a></li>
+      <li><a href="td_intro_meca.html">TD</a></li>
+      <li><a href="tp_intro_meca.html">TP</a></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
+  <dd class="Style6" id="smenu3" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">
+    <ul class="Style20">
+      <li><a href="statique.html">Statique</a></li>
+      <li class="Style13"><a href="cinematique.html">Cin&eacute;matique</a></li>
+      <li class="Style13"><a href="dynamique.html">Dynamique</a></li>
+      <li class="Style13"><a href="#"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu4');" onMouseOut="javascript:montre();">Conception m&eacute;canique </dt>
+  <dd class="Style6"  id="smenu4" onMouseOver="javascript:montre('smenu4');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="cours_conception.html">Cours</a></li>
+      <li class="Style42"><a href="td_conception.html">TD</a></li>
+      <li class="Style42"><a href="tp_conception.html">TP</a></li>
+      <li class="Style42"><a href="#" class="Style42"></a></li>
+    </ul>
+  </dd>
+  <dt class="Style13"  onmouseover="javascript:montre('smenu5');" onMouseOut="javascript:montre();">Projets</dt>
+  <dd class="Style6" id="smenu5" onMouseOver="javascript:montre('smenu5');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li class="Style20"><a href="robot_marcheur.html">Robot marcheur </a></li>
+      <li class="Style13"><strong><a href="robot_ramasseur.html">Robot ramasseur de balles </a></strong></li>
+      <li class="Style42"></li>
+    </ul>
+  </dd>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">D&eacute;couvertes</dt>
+  <dd id="smenu6" onMouseOver="javascript:montre('smenu6');" onMouseOut="javascript:montre();">
+    <ul class="Style20" >
+      <li><a href="paris.html">Paris et alentours </a></li>
+      <li><a href="versailles.html">Versailles </a></li>
+      <li><a href="saint_germain.html">Saint-Germain-en-Laye</a></li>
+      <li><a href="chantilly.html">Chantilly </a></li>
+      <li><a href="lot.html">Le Lot </a></li>
+      <li><a href="ardeche.html">L'Ard&egrave;che</a></li>
+      <li><a href="vexin.html">Le Vexin</a> </li>
+      <li><a href="berlin.html">Berlin</a></li>
+      <li><a href="dresde.html">Dresde</a></li>
+    </ul>
+  </dd>
+</dl>
+<table width="959" border="0" align="left">
+  <tr>
+    <td width="2">&nbsp;</td>
+    <td width="181">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="180">&nbsp;</td>
+    <td width="204">&nbsp;</td>
+    <td width="207">&nbsp;</td>
+    <td width="195">&nbsp;</td>
+    <td width="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="118" class="Style1">&nbsp;</td>
+    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="951" height="111"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="20" class="Style46">&nbsp;</td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+    <td><span class="Style47"></span></td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td><div align="center"><a href="http://www.sciences.uvsq.fr/"><img src="logo_universite.png" alt="d" width="174" height="67" border="0"></a></div></td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4" bgcolor="#00FFCC"><p align="center" class="Style48">Projet Pluritechnique</p>
+    <p align="center" class="Style48">( en collaboration avec Mrs Dupuits, Hamon et Mathieu ) </p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2" bgcolor="#FFCC99"><p class="Style2"><strong>LE  THEME</strong><br>
+        Quatre robots se  rencontrent au cours d&rsquo;un jeu de collecte de balles.<br>
+Le but du jeu est  de ramener le plus de balles de ping-pong dans son enclos, avant les 3 minutes  limites.<br>
+Au d&eacute;part, les  balles sont situ&eacute;es dans un enclos central</p>
+    <p class="Style2">
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,0,0" width="320" height="240" align="ABSMIDDLE" id="FLVPlayer1">
+        <param name="movie" value="FLVPlayer_Progressive.swf" />
+        <param name="salign" value="lt" />
+        <param name="quality" value="high" />
+        <param name="scale" value="noscale" />
+        <param name="FlashVars" value="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=animrobot&autoPlay=false&autoRewind=false" />
+        <embed src="FLVPlayer_Progressive.swf" flashvars="&MM_ComponentVersion=1&skinName=Clear_Skin_1&streamName=animrobot&autoPlay=false&autoRewind=false" quality="high" scale="noscale" width="320" height="240" name="FLVPlayer1" salign="LT" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />      
+</object>
+    </p></td>
+    <td colspan="2"><div align="center"><img src="piste_robot.jpg" width="342" height="333"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="2" bgcolor="#FFFF99"><p align="left" class="Style48">Principaux probl&egrave;mes &agrave; r&eacute;soudre</p>
+      <p align="left" class="Style2">Se d&eacute;placer en toute autonomie </p>
+      <p align="left" class="Style2">Le robot doit &ecirc;tre compl&egrave;tement autonome dans son d&eacute;placement .</p>
+      <p align="left" class="Style2">Pour suivre la ligne,le robot est &eacute;quip&eacute; de capteurs optiques qui sont g&eacute;r&eacute;s par un microcontr&ocirc;leur.</p>
+    <p align="left" class="Style2">Le microcontr&ocirc;leur a &eacute;t&eacute; progamm&eacute; pour obliger le robot &agrave; suivre la ligne </p></td>
+    <td colspan="2" bgcolor="#CCCCFF"><p align="left" class="Style2"><strong><u>Fonctions de service&nbsp;:</u></strong></p>
+      <p align="left" class="Style2">FS1&nbsp;: S&rsquo;adapter &agrave; la source d&rsquo;alimentation en &eacute;nergie<br>
+        FS2&nbsp;: Suivre la ligne<br>
+        FS3&nbsp;: Prendre les balles<br>
+        FS4&nbsp;: Se d&eacute;placer<br>
+        FS5&nbsp;: Etre autonome<br>
+        FS6&nbsp;: D&eacute;poser les balles<br>
+        FS7&nbsp;: D&eacute;marrer et s&rsquo;arr&ecirc;ter &agrave; des endroits d&eacute;finis.</p>
+      <p align="left" class="Style2">FS8&nbsp;: Collecter les balles<br>
+        FS9&nbsp;: Stocker les balles<br>
+        FS10&nbsp;: D&eacute;tecter l&rsquo;enclos<br>
+    FS11&nbsp;: Respecter les normes</p></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td colspan="6" rowspan="2" bgcolor="#00FFFF"><div align="center"><span class="Style48">Les productions </span></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td bgcolor="#66FFCC"><div align="center" class="Style49">Robot 1 </div></td>
+    <td bgcolor="#66FFCC"><div align="center"><span class="Style50"></span></div></td>
+    <td bgcolor="#66FFCC"><div align="center" class="Style49">Robot 2 </div></td>
+    <td bgcolor="#66FFCC"><div align="center" class="Style49">Robot 3 </div></td>
+    <td bgcolor="#66FFCC"><div align="center" class="Style49">Robot 4 </div></td>
+    <td bgcolor="#66FFCC"><div align="center" class="Style49">Robot 5 </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td bgcolor="#66FFCC"><div align="center"><img src="Imag0755.jpg" width="185" height="123"></div></td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC"><div align="center"><img src="Imag0756.jpg" width="186" height="129"></div></td>
+    <td bgcolor="#66FFCC"><div align="center"><img src="robot_1e.jpg" width="179" height="129"></div></td>
+    <td bgcolor="#66FFCC"><div align="center"><img src="robot_2f.jpg" width="170" height="135"></div></td>
+    <td bgcolor="#66FFCC"><div align="center"><img src="robot_3d.jpg" width="170" height="134"></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td bgcolor="#66FFCC">&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td height="507">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>
