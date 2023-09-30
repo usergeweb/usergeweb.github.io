@@ -13,39 +13,6 @@ var d = document.getElementById(id);
 	}
 if (d) {d.style.display='block';}
 }
-
-function MM_CheckFlashVersion(reqVerStr,msg){
-  with(navigator){
-    var isIE  = (appVersion.indexOf("MSIE") != -1 && userAgent.indexOf("Opera") == -1);
-    var isWin = (appVersion.toLowerCase().indexOf("win") != -1);
-    if (!isIE || !isWin){  
-      var flashVer = -1;
-      if (plugins && plugins.length > 0){
-        var desc = plugins["Shockwave Flash"] ? plugins["Shockwave Flash"].description : "";
-        desc = plugins["Shockwave Flash 2.0"] ? plugins["Shockwave Flash 2.0"].description : desc;
-        if (desc == "") flashVer = -1;
-        else{
-          var descArr = desc.split(" ");
-          var tempArrMajor = descArr[2].split(".");
-          var verMajor = tempArrMajor[0];
-          var tempArrMinor = (descArr[3] != "") ? descArr[3].split("r") : descArr[4].split("r");
-          var verMinor = (tempArrMinor[1] > 0) ? tempArrMinor[1] : 0;
-          flashVer =  parseFloat(verMajor + "." + verMinor);
-        }
-      }
-      // WebTV has Flash Player 4 or lower -- too low for video
-      else if (userAgent.toLowerCase().indexOf("webtv") != -1) flashVer = 4.0;
-
-      var verArr = reqVerStr.split(",");
-      var reqVer = parseFloat(verArr[0] + "." + verArr[2]);
-  
-      if (flashVer < reqVer){
-        if (confirm(msg))
-          window.location = "http://www.macromedia.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash";
-      }
-    }
-  } 
-}
 //-->
 </script>
 
@@ -64,7 +31,7 @@ body {
 	background-repeat: repeat;
 	margin-left: 0%;
 	margin-top: 0ex;
-	margin-right: 0%;
+	margin-right: 80%;
 	margin-bottom: 0%;
 }
 dl, dt, dd, ul, li {
@@ -74,7 +41,7 @@ list-style-type: none;
 }
 #menu {
 position: absolute;
-top: 321px;
+top: 322px;
 left: 12px;
 width: 168px;
 background-image: url(textureAB2007.jpg);
@@ -147,23 +114,14 @@ color: #222;
 .Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
 .Style46 {color: #330033; font-size: 50%; }
 .Style47 {font-size: 50%}
-.Style62 {font-family: "Berlin Sans FB"}
-.Style64 {font-family: "Berlin Sans FB"; font-size: 16px; color: #330033;}
-.Style65 {color: #330033; font-size: 16px;}
-.Style49 {font-family: "Berlin Sans FB"; font-size: 24px; font-weight: bold; }
-.Style18 {font-size: 200%;
-font-family: "Berlin Sans FB";
-font-weight: bold;
-color: #330099;
-}
-.Style68 {font-family: "Berlin Sans FB"; font-size: 24px; font-weight: bold; color: #000099; }
-.Style69 {font-size: 16px}
+.Style49 {font-size: 18px}
 
 
 -->
 </style>
+
 </head>
-<body onLoad="MM_CheckFlashVersion('7,0,0,0','Le contenu de cette page n&eacute;cessite une version plus r&eacute;cente de Macromedia Flash Player. Voulez-vous le t&eacute;l&eacute;charger maintenant ?');">
+<body>
 
 <!-- Menu  -->
 <dl id="menu">
@@ -217,19 +175,32 @@ color: #330099;
     </ul>
   </dd>
 </dl>
-<table width="1087" border="0" align="left">
+<table width="1108" border="0" align="left">
   <tr>
     <td width="2">&nbsp;</td>
-    <td width="175">&nbsp;</td>
-    <td width="4">&nbsp;</td>
-    <td width="239">&nbsp;</td>
-    <td width="224">&nbsp;</td>
-    <td width="278">&nbsp;</td>
-    <td width="105">&nbsp;</td>
-    <td width="26">&nbsp;</td>
+    <td width="174">&nbsp;</td>
+    <td width="3">&nbsp;</td>
+    <td width="3">&nbsp;</td>
+    <td width="205">&nbsp;</td>
+    <td width="241">&nbsp;</td>
+    <td width="537">&nbsp;</td>
+    <td width="41">&nbsp;</td>
+    <td width="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -240,7 +211,7 @@ color: #330099;
   </tr>
   <tr>
     <td height="118" class="Style1">&nbsp;</td>
-    <td colspan="6"><div align="center"><img src="bandeau_infoweb_si.jpg" width="991" height="111"></div></td>
+    <td colspan="7"><div align="center"><img src="bandeau_infoweb_si.jpg" width="960" height="111"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -249,6 +220,7 @@ color: #330099;
     <td><span class="Style47"></span></td>
     <td><span class="Style47"></span></td>
     <td><span class="Style47"></span></td>
+    <td>&nbsp;</td>
     <td><span class="Style47"></span></td>
     <td><span class="Style47"></span></td>
     <td><span class="Style47"></span></td>
@@ -257,7 +229,7 @@ color: #330099;
     <td class="Style1">&nbsp;</td>
     <td><a href="http://www.sciences.uvsq.fr/"><img src="logo_universite.png" alt="d" width="174" height="67" border="0"></a></td>
     <td>&nbsp;</td>
-    <td colspan="4"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
+    <td colspan="5"><div align="center"><img src="bandeau2013_1.jpg" width="754" height="112"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -269,38 +241,45 @@ color: #330099;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
+    <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4"><div align="center"><strong> </strong></div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td colspan="4"><p class="Style64" style="text-align:justify"><u><font color="#000080">Probl&egrave;me:</font></u></p>
-      <p class="Style64" style="text-align:justify"> <font color="#000080">A partir d'un motor&eacute;ducteur 
-        tel que ci-apr&egrave;s, l'objectif est de r&eacute;aliser un robot marcheur ( roues 
-        interdites )</font></p>
-      <p class="Style64" style="text-align:center"><img src="00_2_motoreducteur.jpg" width="565" height="396"></p>
-      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">IL faut  d'abord 
+        <p class="Style64" style="text-align:justify"> <font color="#000080">A partir d'un motor&eacute;ducteur 
+          tel que ci-apr&egrave;s, l'objectif est de r&eacute;aliser un robot marcheur ( roues 
+          interdites )</font></p>
+      <p class="Style64" style="text-align:center"><img src="00_2_motoreducteur.jpg" alt="o" width="565" height="396"></p>
+      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65 Style49"><font color="#000080">IL faut  d'abord 
         rechercher des syst&egrave;mes permettant d'obtenir le mouvement alternatif 
         des jambes &agrave; partir d'un mouvement de rotation continu.</font></span></p>
-      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Pour cela, des prototypes du 
+      <p class="MsoNormal Style46 Style1 Style62 Style49" style="text-align:justify"> <span class="Style65"><font color="#000080">Pour cela, des prototypes du 
         syst&egrave;me de transformation de mouvement ont &eacute;t&eacute; r&eacute;alis&eacute;s en carton afin de 
-        v&eacute;rifier la cin&eacute;matique du syst&egrave;me.</font></span></p>
-      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Ensuite, une fois que la 
-        cin&eacute;matique du syst&egrave;me choisi a &eacute;t&eacute; valid&eacute;e,&nbsp; les pi&egrave;ces sont r&eacute;alis&eacute;es en 
-        </font></span><span class="Style69"><font color="#000080">impresssion 3D </font></span></p>
-      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Une fois le robot assembl&eacute; il 
+        v&eacute;rifier la cin&eacute;matique du syst&egrave;me.</font></span> <span class="Style65"><font color="#000080">Ensuite, une fois que la 
+        cin&eacute;matique du syst&egrave;me choisi a &eacute;t&eacute; valid&eacute;e,&nbsp; les pi&egrave;ces sont r&eacute;alis&eacute;es en </font></span><span class="Style69"><font color="#000080">impresssion 3D </font></span> <span class="Style65"><font color="#000080">Une fois le robot assembl&eacute; il 
         arrive parfois que le robot ne fonctionne pas comme cela &eacute;tait pr&eacute;vu ( probl&egrave;mes 
         d'&eacute;quilibre, de frottements des pi&egrave;ces tournantes, de masse trop importante des 
-        pi&egrave;ces en mouvement ...) </font></span></p>
-      <p class="MsoNormal  Style46 Style1 Style62" style="text-align:justify"> <span class="Style65"><font color="#000080">Il faut alors analyser la 
+        pi&egrave;ces en mouvement ...) </font></span> <span class="Style65"><font color="#000080">Il faut alors analyser la 
         cause du probl&egrave;me et rechercher une solution appropri&eacute;e, ce qui n'est pas 
         toujours une t&acirc;che ais&eacute;e.</font></span></p>
-      <p class="MsoNormal  Style46 Style1" style="text-align:justify"> <span class="Style64"><font color="#000080">Cela dit ,ce travail est une source d'une r&eacute;elle cr&eacute;ativit&eacute;, comme peuvent le montrer les 
-    images ci-apr&egrave;s de quelques r&eacute;alisations.</font></span></p></td>
+      <p class="MsoNormal  Style46 Style1" style="text-align:justify"> <span class="Style64 Style49"><font color="#000080">Cela dit ,ce travail est une source d'une r&eacute;elle cr&eacute;ativit&eacute;, comme peuvent le montrer les 
+        images ci-apr&egrave;s de quelques r&eacute;alisations.</font><font color="#000080"></font></span></p></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td colspan="2">&nbsp;</td>
@@ -309,6 +288,7 @@ color: #330099;
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td colspan="4"><div align="center" class="Style49">Etude cin&eacute;matique d'un robot bip&egrave;de </div></td>
@@ -318,39 +298,45 @@ color: #330099;
     <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <td colspan="4"><div align="center"><img src="etude_cinem_robot_bipede.jpg" alt="ettr" width="860" height="597"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
-    <td class="Style18">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <td colspan="4" class="Style18"><div align="center" class="Style49">Maquette num&eacute;rique d'un robot bipede </div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
-    <td class="Style18">&nbsp;</td>
-    <td colspan="4" class="Style18"><div align="center"><img src="07_robot_bipide.jpg" width="354" height="398"></div></td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td colspan="4" class="Style18"><div align="center"><img src="07_robot_bipide.jpg" alt="q" width="354" height="398"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
-    <td class="Style18">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <td colspan="4" class="Style18"><div align="center" class="Style49">Robot quadrup&egrave;de </div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="2"><div align="center"><img src="01_robot_quadrupede.jpg" alt="c" width="486" height="281"></div></td>
-    <td colspan="2"><div align="center"><img src="05_1_robot_quadrupede.jpg" alt="x" width="392" height="322"></div></td>
+    <td colspan="2"><div align="center"><img src="01_robot_quadrupede.jpg" alt="c" width="459" height="254"></div></td>
+    <td colspan="2"><div align="center"><img src="05_1_robot_quadrupede.jpg" alt="x" width="367" height="290"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -359,13 +345,15 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="4"><div align="center"><img src="05_2_cinematique_robot_quadrupede.jpg" width="885" height="542"></div></td>
+    <td colspan="4"><div align="center"><img src="05_2_cinematique_robot_quadrupede.jpg" alt="m" width="870" height="519"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -374,14 +362,16 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="2"><div align="center"><img src="04_robot_quadrupede.jpg" width="412" height="282"></div></td>
-    <td colspan="2"><div align="center"><img src="05_2_robot_quadrupede.jpg" width="377" height="271"></div></td>
+    <td colspan="2"><div align="center"><img src="04_robot_quadrupede.jpg" alt="k" width="399" height="266"></div></td>
+    <td colspan="2"><div align="center"><img src="05_2_robot_quadrupede.jpg" alt="n" width="367" height="255"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -390,13 +380,15 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="4"><div align="center"><img src="05_3_cinematique_robot_quadrupede.jpg" width="926" height="813"></div></td>
+    <td colspan="4"><div align="center"><img src="05_3_cinematique_robot_quadrupede.jpg" alt="r" width="873" height="740"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -404,14 +396,16 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="2"><div align="center"><img src="06_5_simul_robot_quadrupede.jpg" width="474" height="310"></div></td>
-    <td colspan="2"><div align="center"><img src="06_3_simul_robot_quadrupede.jpg" width="443" height="334"></div></td>
+    <td colspan="2"><div align="center"><img src="06_5_simul_robot_quadrupede.jpg" alt="s" width="420" height="228"></div></td>
+    <td colspan="2"><div align="center"><img src="06_3_simul_robot_quadrupede.jpg" alt="d" width="366" height="276"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -419,22 +413,16 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="2"><div align="center"><img src="09_robot_rampeur.jpg" width="482" height="344"></div></td>
-    <td colspan="2"><div align="center"><img src="08_simulation_rampeur.jpg" width="574" height="379"></div></td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td colspan="2">&nbsp;</td>
-    <td colspan="2">&nbsp;</td>
+    <td colspan="2"><div align="center"><img src="09_robot_rampeur.jpg" alt="u" width="380" height="239"></div></td>
+    <td colspan="2"><div align="center"><img src="08_simulation_rampeur.jpg" alt="h" width="391" height="235"></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
@@ -443,14 +431,117 @@ color: #330099;
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td colspan="2">&nbsp;</td>
-    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
+    <td class="Style1">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
