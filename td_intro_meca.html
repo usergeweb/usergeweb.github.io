@@ -103,7 +103,6 @@ color: #222;
 #mentions a:hover{text-decoration: underline;
 }
 .Style1 {color: #330033}
-.Style2 {font-family: "Berlin Sans FB"}
 .Style6 {font-family: "Berlin Sans FB"; font-size: large; color: #330033; }
 .Style13 {color: #330033; font-family: Arial, Helvetica, sans-serif; }
 .Style20 {
@@ -113,18 +112,19 @@ color: #222;
 	font-size: 16px;
 }
 .Style42 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif;}
-.Style44 {font-weight: bold; color: #330033; font-family: Arial, Helvetica, sans-serif; font-style: italic; }
-.Style45 {color: #000033}
 .Style46 {color: #330033; font-size: 50%; }
 .Style47 {font-size: 50%}
-.Style51 {
-	font-size: 14px;
+.Style58 {
+	font-size: 18px;
 	font-family: "Berlin Sans FB";
+	font-weight: bold;
+	color: #0033FF;
 }
-.Style53 {color: #330033; font-family: "Berlin Sans FB"; font-size: 14px; }
-.Style55 {color: #330033; font-family: "Berlin Sans FB"; font-weight: bold; font-size: 12px; }
-.Style58 {font-size: 14px; font-family: "Berlin Sans FB"; font-weight: bold; }
-.Style59 {color: #330033; font-family: "Berlin Sans FB"; font-size: 14px; font-weight: bold; }
+.Style60 {color: #000099; font-size: 18px; }
+.Style62 {
+	color: #990066;
+	font-size: 18px;
+}
 
 
 -->
@@ -136,12 +136,12 @@ color: #222;
 <!-- Menu  -->
 <dl id="menu">
   <dt class="Style13" onMouseOver="javascript:montre('smenu1');" onMouseOut="javascript:montre();"><a href="index.html">Accueil</a></dt>
-  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Introduction &agrave; l'ing&eacute;nierie m&eacute;canique </dt>
+  <dt class="Style13" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">Mod&eacute;lisation des syst&egrave;mes </dt>
   <dd class="Style6" id="smenu2" onMouseOver="javascript:montre('smenu2');" onMouseOut="javascript:montre();">
     <ul class="Style20">
-      <li><a href="cours_intro_meca.html">Cours</a></li>
-      <li><a href="td_intro_meca.html">TD</a></li>
-      <li><a href="tp_intro_meca.html">TP</a></li>
+      <li><a href="cours_intro_meca.html">Ingeni&eacute;rie des syst&egrave;mes </a></li>
+      <li><a href="td_intro_meca.html">Syst&egrave;mes lin&eacute;aires </a></li>
+      <li><a href="tp_intro_meca.html">Syst&egrave;mes discrets </a></li>
     </ul>
   </dd>
   <dt class="Style13" onMouseOver="javascript:montre('smenu3');" onMouseOut="javascript:montre();">M&eacute;canique du solide rigide </dt>
@@ -188,13 +188,13 @@ color: #222;
 <table width="959" border="0" align="left">
   <tr>
     <td width="2">&nbsp;</td>
-    <td width="173">&nbsp;</td>
-    <td width="6">&nbsp;</td>
-    <td width="52">&nbsp;</td>
-    <td width="235">&nbsp;</td>
-    <td width="205">&nbsp;</td>
-    <td width="277">&nbsp;</td>
-    <td width="6">&nbsp;</td>
+    <td width="179">&nbsp;</td>
+    <td width="4">&nbsp;</td>
+    <td width="79">&nbsp;</td>
+    <td width="207">&nbsp;</td>
+    <td width="209">&nbsp;</td>
+    <td width="276">&nbsp;</td>
+    <td width="2">&nbsp;</td>
   </tr>
   <tr>
     <td class="Style1">&nbsp;</td>
@@ -253,9 +253,7 @@ color: #222;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td colspan="3"><div align="center" class="Style58">Syst&egrave;mes lin&eacute;aires </div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -273,9 +271,7 @@ color: #222;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td colspan="3" bgcolor="#FFCC66"><span class="Style62" lang="fr">Un <strong>syst&egrave;me lin&eacute;aire</strong> peut &ecirc;tre d&eacute;crit par des &eacute;quations <strong>lin&eacute;aires</strong> (&eacute;quations <strong>lin&eacute;aires</strong> diff&eacute;rentielles ou aux diff&eacute;rences), ou encore  ob&eacute;it au principe de superposition</span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -293,9 +289,18 @@ color: #222;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
+    <td colspan="3" class="Style58"><div align="center">Les th&egrave;mes abord&eacute;s  </div></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td class="Style1">&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
+    <td colspan="3" bgcolor="#00CCCC" class="Style60">- la <strong>mod&eacute;lisation</strong> ou comment d&eacute;crire math&eacute;matiquement les syst&egrave;mes &eacute;tudi&eacute;s (notion de fonction de transfert) ;<br>
+  - la <strong>r&eacute;ponse</strong> des syt&egrave;mes, ou comment les syst&egrave;mes les plus courants r&eacute;agissent &agrave; des sollicitations au niveau de leur commande (r&eacute;ponses temporelles et r&eacute;ponses harmoniques ou fr&eacute;quentielles) ;<br>
+  - la <strong>stabilit&eacute;</strong>, qui est la propri&eacute;t&eacute; imp&eacute;rative que doit poss&eacute;der un syst&egrave;me ;<br>
+  - la <strong>commande</strong>, c&rsquo;est-&agrave;-dire comment concevoir la boucle afin d&rsquo;obtenir des performances souhait&eacute;es ou s&rsquo;en rapprocher autant que possible</td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -313,9 +318,7 @@ color: #222;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td colspan="3"><div align="center" class="Style58"><a href="00002_cours_representation_identification_slci.pdf">Cours repr&eacute;sentation et identification des syst&egrave;mes lin&eacute;aires (pdf) </a></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -333,19 +336,7 @@ color: #222;
     <td>&nbsp;</td>
     <td>&nbsp;</td>
     <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td class="Style1">&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
+    <td colspan="3"><div align="center" class="Style58"><a href="00003_cours_correction_amelioration_des_slci.pdf">Cours correction et am&eacute;lioration des syst&egrave;mes lin&eacute;aires (pdf)</a> </div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
